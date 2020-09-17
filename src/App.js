@@ -33,13 +33,14 @@ const App = () => {
   const count = [<p>You cliked!</p>];
   const addItem = () => {
     console.log('rrr');
-    count.push(<p>You cliked!</p>)
   }; 
+  const li = ['Color', 'red', 'Grean'];
+  const content='Hello, this is block with content'
   return (
     <React.Fragment>
       <HeaderBlock title='Учите слова онлайн!' />
-      <ContentBlock content='Kontent' addItem={addItem} count={count}/>
-      <FooterBlock foterContent='Kontent' addItem={addItem} />
+      <ContentBlock content={content} addItem={addItem} li={li}count={count}/>
+      <FooterBlock />
     </React.Fragment>
   );
 }
